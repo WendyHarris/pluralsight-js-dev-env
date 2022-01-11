@@ -2,7 +2,9 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
-  "scripts": {},
+  "scripts": {
+    "start": "node buildScripts/srcServer.js"
+  },
   "author": "Wendy Harris",
   "license": "None",
   "dependencies": {
@@ -38,7 +40,7 @@
     "open": "7.4.2",
     "rimraf": "3.0.2",
     "style-loader": "2.0.0",
-    "surge": "^0.20.1",
+    "surge": "^0.23.1",
     "webpack": "5.24.2",
     "webpack-dev-middleware": "4.1.0"
   }
