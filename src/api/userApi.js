@@ -4,7 +4,7 @@ import getBaseUrl from './baseUrl';
 const baseUrl = getBaseUrl(); 
 
 export function getUsers() {
-  return get('user');
+  return get('users');
 }
 
 export function deleteUser(id) {
