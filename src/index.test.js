@@ -1,6 +1,8 @@
-import { expect } from 'chai'; 
+ 
 import jsdom from "jsdom"; 
 import fs from "fs"; 
+
+var expect = require('chai').expect
 
 describe('Our first test', () => {
   it('should pass', () => {
