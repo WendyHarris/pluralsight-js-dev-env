@@ -1,5 +1,6 @@
 import path from "path";
-import Ht
+import HtmlWebpackPlugin from "html-webpack-plugin"; 
+
 export default {
   mode: "production",
   devtool: "source-map",
@@ -9,7 +10,11 @@ export default {
     publicPath: "/",
     filename: "bundle.js",
   },
-  plugins: [],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html", 
+    }),
+  ],
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, use: ["babel-loader"] },
