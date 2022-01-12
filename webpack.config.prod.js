@@ -1,10 +1,10 @@
 import path from "path";
-import HtmlWebpackPlugin from "html-webpack-plugin"; 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 export default {
   mode: "production",
   devtool: "source-map",
-  entry: "src/index.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
