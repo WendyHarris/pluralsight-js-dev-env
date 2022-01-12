@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 export default {
   mode: "production",
   devtool: "source-map",
-  entry: "./src/index.js",
+  entry: "./dist/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
